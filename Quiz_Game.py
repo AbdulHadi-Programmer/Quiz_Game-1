@@ -1,5 +1,7 @@
 questions = ["Q1) What is the Capital of Pakistan? \n a. Sialkot \t b. Karachi \n c. Lahore \t d. Islamabad", "Q2) What is the value of mathematics constant pi ?\n a. 3.14159 \t b. 22/7 \n c. 353/113 \t d. None of these", "Q3) Who is the winner of The FIFA World Cup ?\n a. Portugal \t b. France \n c. Argentina  \t d. Morocco", "Q4) On which Year Bangladesh get separated from Pakistan ?\n a. 1971 \t b. 1963 \n c. 1988. \t d. 1986", "Q5) Which Islamic State has Nuclear Power ?\n a. Qatar \t b. Egypt \n c. Pakistan \t d. Saudi Arab"]
+# This is a point variable.
 points = 0
+# I make this function to remove if-else statement again and again after asking question from User.
 def func(ans):
     global points
     answer = input("Type the right answer:-  a, b, c, d: ").lower()
@@ -8,7 +10,9 @@ def func(ans):
         points += 1000
     else:
         print("Oops! This is the Wrong Answer")
-        
+# In the above function i give var in func argument and if question/ answer is correct then it execute if statement and add 1000 points otherwise it execute else statement. 
+ 
+# Now below, I ask question to user and use a function with correct answer argument, value.
 print(questions[0])
 func("d")
 print(questions[1])
